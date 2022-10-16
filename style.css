@@ -13,12 +13,12 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 40px 60px;
+    padding: 30px 50px;
 }
 
-.nav-link li {
+.nav-link ul {
+    display: flex;
     list-style: none;
-    display: inline-block;
 }
 
 .nav-link li a {
@@ -31,13 +31,13 @@ header {
 .nav-link li a:hover {
     cursor: pointer;
     border-bottom: 2px solid white;
-
 }
 
 .brand {
     color: white;
     font-size: 30px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 /* text header */
@@ -56,4 +56,75 @@ h1 {
     color: white;
 }
 
+/* toggle button */
+.toggle-button {
+    position: absolute;
+    top: 2.5em;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
 /* header end */
+
+/* content */
+
+/* media query */
+@media screen and (max-width: 576px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-link {
+        display: none;
+        background-color: black;
+        width: 500px;
+        z-index: 999;
+        margin: 10px -50px;
+
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .nav-link li {
+        margin: 20px 50px;
+    }
+
+    .nav-link.active {
+        display: flex;
+    }
+
+    header {
+        height: 1200px;
+
+    }
+
+    .text-head {
+        margin: 200px 10px;
+        width: 450px;
+        z-index: -1;
+    }
+
+    h1 {
+        padding: 20px;
+    }
+}
