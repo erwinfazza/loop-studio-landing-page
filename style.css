@@ -101,6 +101,9 @@ header {
     line-height: 30px;
 }
 
+/* nav-mid */
+
+
 
 /* content end */
 /* media query */
@@ -114,7 +117,7 @@ header {
     .nav-link {
         display: none;
         background-color: black;
-        width: 500px;
+        width: 100%;
         z-index: 1;
         margin: -50px -50px;
         position: absolute;
@@ -181,4 +184,6 @@ header {
     .text-hero p {
         text-align: center;
     }
+
+
 }
