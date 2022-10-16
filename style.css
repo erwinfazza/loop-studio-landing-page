@@ -48,7 +48,7 @@ header {
 
 }
 
-h1 {
+.text-head h1 {
     font-size: 60px;
     margin-bottom: 20px;
     border: 3px solid white;
@@ -78,7 +78,23 @@ h1 {
 /* header end */
 
 /* content */
+/* hero */
+.hero {
+    display: flex;
+    margin: 0 150px;
+}
 
+.image {
+    z-index: -1;
+}
+
+.text-hero {
+    width: 600px;
+    background-color: aliceblue;
+    z-index: 999;
+}
+
+/* content end */
 /* media query */
 @media screen and (max-width: 576px) {
     .toggle-button {
