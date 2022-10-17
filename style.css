@@ -190,7 +190,62 @@ header {
     background: url(img/desktop/image-fisheye.jpg) no-repeat;
 }
 
+/* footer */
+footer {
+    background-color: hsl(0, 0%, 0%);
 
+    margin-top: 150px;
+    display: grid;
+    grid-template-areas:
+        'loop social'
+        'menu copy';
+}
+
+.studio {
+    color: white;
+    margin: 20px 10px 0 150px;
+}
+
+/* media social */
+.lis a {
+    margin: 10px;
+}
+
+.lis a:hover {
+    border-bottom: 2px solid white;
+}
+
+.daftar {
+    display: flex;
+    margin: 20px 150px 20px 0;
+    justify-content: right;
+    list-style: none;
+}
+
+/* navigation menu */
+.rinci {
+    display: flex;
+    margin: 10px 0 30px 150px;
+    list-style: none;
+}
+
+
+.rinci li a {
+    margin-right: 20px;
+    text-decoration: none;
+    padding: 10px 20px 10px 0;
+    color: white;
+}
+
+.rinci li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.lisence {
+    color: white;
+    text-align: right;
+    margin: 10px 150px 30px 0;
+}
 
 /* content end */
 /* media query */
