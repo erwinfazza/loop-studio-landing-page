@@ -144,7 +144,7 @@ header {
 
 .name {
     margin: 380px 0 0 50px;
-    width: 150px;
+    color: white;
 
 }
 
@@ -247,6 +247,10 @@ footer {
     margin: 10px 150px 30px 0;
 }
 
+.btn-bottom {
+    display: none;
+}
+
 /* content end */
 /* media query */
 @media screen and (max-width: 576px) {
@@ -327,6 +331,126 @@ footer {
         text-align: center;
     }
 
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        margin: 450px 20px;
 
+    }
+
+    .font {
+        width: 90%;
+    }
+
+    .name {
+        margin-top: 130px;
+        margin-left: 15px;
+        position: absolute;
+        width: 150px;
+        justify-content: left;
+
+    }
+
+    .div1 {
+        width: 80vh;
+        height: 200px;
+        background-size: 500px;
+        background-position: center;
+    }
+
+    .div2 {
+        width: 80vh;
+        height: 200px;
+        background-size: 500px;
+        background-position: center;
+    }
+
+    .div3 {
+        width: 80vh;
+        height: 200px;
+        background-size: 500px;
+        background-position: center top;
+    }
+
+    .div4 {
+        width: 80vh;
+        height: 200px;
+        background-size: 500px;
+        background-position: center right;
+    }
+
+    .div5 {
+        width: 80vh;
+        height: 200px;
+        background-size: 500px;
+        background-position: cover;
+    }
+
+    .div6 {
+        width: 80vh;
+        height: 200px;
+        background-size: 500px;
+        background-position: center;
+    }
+
+    .div7 {
+        width: 80vh;
+        height: 200px;
+        background-size: cover;
+        background-position: top center;
+    }
+
+    .div8 {
+        width: 80vh;
+        height: 200px;
+        background-size: 500px;
+        background-position: center;
+    }
+
+    .nav-mid {
+        position: absolute;
+        z-index: 5999;
+        display: flex;
+        flex-direction: column;
+        margin-top: 300px;
+        width: 100%;
+
+    }
+
+    .tag {
+        margin: 50px -10px;
+    }
+
+
+
+    .see {
+        display: none;
+    }
+
+    /* end */
+    .end {
+        display: grid;
+        grid-template-areas:
+            'tag'
+            'gallery'
+            'see';
+    }
+
+    .btn-bottom {
+        display: flex;
+        position: absolute;
+        margin: -400px 210px;
+        align-items: center;
+    }
+
+    footer {
+        margin-top: -200px;
+        display: grid;
+        grid-template-areas:
+            'loop'
+            'menu'
+            'daftar'
+            'copy';
+    }
 
 }
