@@ -249,6 +249,8 @@ footer {
 
 .btn-bottom {
     display: none;
+    padding: 10px 35px;
+
 }
 
 /* content end */
@@ -439,11 +441,12 @@ footer {
     .btn-bottom {
         display: flex;
         position: absolute;
-        margin: -400px 210px;
+        margin: -400px 150px 0 180px;
         align-items: center;
+        z-index: 1000;
     }
 
-    footer {
+    /* footer {
         margin-top: -200px;
         display: grid;
         grid-template-areas:
@@ -451,6 +454,47 @@ footer {
             'menu'
             'daftar'
             'copy';
+    } */
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: -200px;
     }
+
+    .loop {
+        justify-content: center;
+        margin-left: 50px;
+        order: -1;
+    }
+
+    .menu {
+        order: -1;
+    }
+
+    .rinci {
+        display: flex;
+        flex-direction: column;
+        margin-right: 100px;
+
+    }
+
+    .rinci li {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .social {
+        order: 1;
+        margin-left: 15px;
+    }
+
+    .copy {
+        order: 2;
+    }
+
+    /* btn-bottom */
+
+
+
 
 }
