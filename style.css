@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 /* header */
 header {
     background: url(img/desktop/image-hero.jpg) no-repeat;
@@ -14,6 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 30px 50px;
+    font-family: 'Alata', sans-serif;
 }
 
 .nav-link ul {
@@ -26,7 +31,9 @@ header {
     margin-left: 20px;
     color: white;
     padding-bottom: 10px;
+
 }
+
 
 .nav-link li a:hover {
     cursor: pointer;
@@ -49,12 +56,16 @@ header {
 }
 
 .text-head h1 {
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
     font-size: 60px;
     margin-bottom: 20px;
     border: 3px solid white;
     padding: 50px 80px;
     color: white;
 }
+
+
 
 /* toggle button */
 .toggle-button {
@@ -87,18 +98,27 @@ header {
 
 
 .text-hero {
-    width: 500px;
+    width: 550px;
     height: 400px;
     background-color: white;
     position: absolute;
     z-index: 3;
-    margin: 200px 560px;
+    margin: 200px 550px;
     padding: 55px 50px;
+}
+
+.text-hero h1 {
+    font-family: 'Alata', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: hsl(0, 0%, 41%);
 }
 
 .text-hero p {
     padding-top: 55px;
     line-height: 30px;
+    font-family: 'Josefin sans', sans-serif;
+    color: hsl(0, 0%, 55%);
 }
 
 /* nav-mid */
@@ -114,6 +134,9 @@ header {
 .tag {
     grid-area: 1 / 1 / 2 / 3;
     font-size: 30px;
+    font-family: 'Alata', sans-serif;
+    color: hsl(0, 0%, 41%);
+    font-weight: 200;
 }
 
 .see {
@@ -125,6 +148,12 @@ header {
 .btn {
     padding: 5px 20px;
     background: none;
+    font-family: 'Alata', sans-serif;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
 }
 
 /* photo */
@@ -140,12 +169,15 @@ header {
 
 .font {
     text-align: center;
+
 }
 
 .name {
     margin: 380px 0 0 50px;
     color: white;
-
+    font-family: 'Alata', sans-serif;
+    font-weight: 400;
+    width: 150px;
 }
 
 .div1 {
@@ -204,6 +236,8 @@ footer {
 .studio {
     color: white;
     margin: 20px 10px 0 150px;
+    font-family: 'Josefin sans', sans-serif;
+    font-weight: 400;
 }
 
 /* media social */
@@ -222,11 +256,14 @@ footer {
     list-style: none;
 }
 
+
 /* navigation menu */
+
 .rinci {
     display: flex;
     margin: 10px 0 30px 150px;
     list-style: none;
+    font-family: 'Josefin sans', sans-serif;
 }
 
 
@@ -245,12 +282,19 @@ footer {
     color: white;
     text-align: right;
     margin: 10px 150px 30px 0;
+    font-family: 'Josefin sans', sans-serif;
 }
 
 .btn-bottom {
     display: none;
     padding: 10px 35px;
 
+}
+
+.btn-bottom:hover {
+    background-color: black;
+    color: white;
+    font-family: 'Alata', sans-serif;
 }
 
 /* content end */
@@ -290,6 +334,21 @@ footer {
     .nav-link.active {
         display: flex;
     }
+
+    /* x menu */
+    .nav-link.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-link.active .bar:nth-child(1) {
+        transform: translateX(8px) rotate(45deg);
+    }
+
+    .nav-link.active .bar:nth-child(3) {
+        transform: translateX(8px) rotate(-45deg);
+    }
+
+    /* x menu */
 
     .brand {
         position: absolute;
@@ -420,7 +479,7 @@ footer {
     }
 
     .tag {
-        margin: 50px -10px;
+        margin: 80px -10px;
     }
 
 
@@ -490,7 +549,10 @@ footer {
 
     .copy {
         order: 2;
+
     }
+
+
 
     /* btn-bottom */
 
